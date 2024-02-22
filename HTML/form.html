@@ -1,0 +1,66 @@
+<!--form is used to create an html form for user input  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Form</legend>
+        <div>
+            <label for="Username">Username</label>
+            <input type="text" id="username">
+        </div>
+<div>
+    <label for="email" re>Email</label>
+    <input type="email" id="email" required autocomplete="off" size="5" value="tanay@gmail.com" readonly>
+    <!-- readonly mtlb hum sirf padh padh skte h value change ni krskte -->
+    <!-- value mtlb ye value already aai rkhe hmesha -->
+    <!-- autocomplete off means purani value na show kre hume -->
+    <!-- required means this field is mandatory -->
+    <!-- we can have input typeas password -hides the entered text for secure password entry 
+    number-accepts numeric input
+radio buttons- alloww users to chose a single option from a gp of options
+checkboxes - allow users to select multiple options
+dropdowns- provides a list of options for users to chose from
+textarea- allow users to enter multiple lines of text
+-->
+<br>
+<label for="number"></label>
+<input type="number" max="5">
+<!-- max 5 means we cant go after 5 range i.e. 123455394 yes possible but not 690 -->
+<label for="gender"></label>
+<input type="radio" name="gender" id="">Male
+<input type="radio" name="gender">Female
+<!-- we have to put name=gender in both the , so that  -->
+<label for="hobbies">Fav hobbies</label>
+<input type="checkbox" name="interest">
+<input type="checkbox" name="interest">
+<!-- we can select both the options  -->
+<!-- dropdown -->
+<label for="country">Favourite</label>
+<select name="" id="">
+    <option value="usa">USA</option>
+    <option value="canada">Canada</option>
+    <option value="uk">UK</option>
+    <label for="comment">Message Us</label>
+    <textarea name="comments" id="" cols="300" rows="10" placeholder="Enter your comments"></textarea>
+    <button>Submit</button>
+    <label for="range">Range</label>
+    <input type="range" name="volume" min="0" max="100" value="80">
+    <label for="birthdate">Birthdate</label>
+    <input type="date" name="birthdate">
+    <label for="appoinment">appoinment</label>
+    <input type="time" name="appoinment">
+    <label for="favcolor">favcolor</label>
+    <input type="color" name="favcolor">
+</select>
+</div>
+    </form>
+</fieldset>
+
+</body>
+</html>
